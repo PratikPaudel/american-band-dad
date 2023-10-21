@@ -1,0 +1,9 @@
+.hero-container {
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+}
+.hero-container .hero-image {
+  width: 20rem;
+  height: 20rem;
+}/*# sourceMappingURL=Hero.css.map */

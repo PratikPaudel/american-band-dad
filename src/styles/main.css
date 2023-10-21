@@ -1,0 +1,42 @@
+.container {
+  width: 100vw;
+  overflow-x: hidden;
+  margin-top: 2rem;
+}
+
+.bloc-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bloc-tabs .tabs:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+.bloc-tabs .active-tabs {
+  background-color: aqua;
+}
+
+.content {
+  display: none;
+}
+
+.podcast-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.podcast-content img {
+  width: 80px;
+}
+
+.hero-container {
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+}
+.hero-container .hero-image {
+  width: 20rem;
+  height: 20rem;
+}/*# sourceMappingURL=main.css.map */

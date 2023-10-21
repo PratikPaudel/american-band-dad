@@ -1,0 +1,13 @@
+.navbar-container {
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    ul {
+        display: flex;
+        gap: 2rem;
+        li {
+            list-style: none;
+        }
+    }
+}

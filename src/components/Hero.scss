@@ -1,0 +1,50 @@
+.hero-container {
+    width: 100vw;
+    height: 30rem;
+    overflow-x: hidden;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(./public/podcast-background.png);
+    background-color: $primary;
+    background-size: contain;
+    font-family: bangers;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 10rem;
+        letter-spacing: 10px;
+    }
+    button {
+        font-size: 3rem;
+        font-family: bangers;
+        border: none;
+        background-color: $secondary;
+        padding: 6px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 4px solid $secondary;
+            z-index: 0;
+            transition: top, left, right, bottom, 100ms ease-in-out;
+        }
+        &:hover::before,
+        &:focus::before {
+            top: calc(4px * -3);
+            left: calc(4px * -3);
+            right: calc(4px * -3);
+            bottom: calc(4px * -3);
+            cursor: pointer;
+        }
+    }
+}
+

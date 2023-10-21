@@ -1,0 +1,72 @@
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-family: 'Libre Franklin';
+    .toggle-container {
+        width: 100%;
+    }
+}
+
+.bloc-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 1.5rem;
+    > * {
+        border: 2px solid white;
+        height: 3rem;
+        flex: 1;
+        box-sizing: border-box;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px $secondary solid;
+    }
+    .tabs {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        background-color: $secondary;
+        &::before {
+            content: '';
+            top: 0;
+            left: 0;
+            right:0;
+            bottom: 0;
+            position: absolute;
+            background-color: white;
+            border-radius: 70%;
+            transition: transform 500ms ease-in-out;
+            transform: scale(1.5);
+            z-index: -1;
+        }
+        &:hover::before {
+            cursor: pointer;
+            transform: scale(0)
+        }
+    }
+    .active-tabs {
+        background-color: white;
+    }
+}
+
+.content {
+    display: none;
+}
+
+.podcast-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    img {
+        width: 100px;
+    }
+    &:hover {
+        background-color: white;
+    }
+}
+

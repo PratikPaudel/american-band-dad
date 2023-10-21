@@ -1,0 +1,44 @@
+.container {
+  width: 100vw;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.container .toggle-container {
+  width: 100%;
+}
+
+.bloc-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bloc-tabs > * {
+  border: 2px solid grey;
+  flex: 1;
+  box-sizing: border-box;
+}
+.bloc-tabs .tabs:hover {
+  background-color: rgb(225, 252, 191);
+  cursor: pointer;
+}
+.bloc-tabs .active-tabs {
+  background-color: rgb(225, 252, 191);
+}
+
+.content {
+  display: none;
+}
+
+.podcast-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.podcast-content img {
+  width: 100px;
+}
+.podcast-content:hover {
+  background-color: rgb(225, 252, 191);
+}/*# sourceMappingURL=Podcasts.css.map */
