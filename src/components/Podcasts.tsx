@@ -1,4 +1,5 @@
 import { useState } from "react"
+import AudioPlayer from "./AudioPlayer";
 
 const Podcasts = () => {
 
@@ -49,6 +50,8 @@ const Podcasts = () => {
                         <img src="./public/doctor 2.jpg" alt="doctor" />
                         <div>Bond with Son vs Son in Band</div>
                         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, officiis.</div>
+                        <AudioPlayer />
+
                     </div>
                     <div className="podcast-content">
                         <img src="./public/lawyer 1.jpg" alt="doctor" />
