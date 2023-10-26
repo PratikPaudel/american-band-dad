@@ -6,10 +6,10 @@ const AudioPlayer = () => {
   const [duration, setDuration] = useState(0);
 
   // references
-  const audioPlayer = useRef<HTMLAudioElement|>(null); // reference our audio component
+  const audioPlayer = useRef<HTMLAudioElement|any>(null); // reference our audio component
 
   useEffect(()=> {
-    setDuration{audioPlayer.current.duration}
+      setDuration(audioPlayer.current.duration)
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState])
 
   const togglePlayPause = () => {
