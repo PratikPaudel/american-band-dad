@@ -1,1 +1,7 @@
 node_modules
+node_modules
+/gsap
+/scrolltrigger
+.cache
+american-band-dad\.cache
+.cache/34
